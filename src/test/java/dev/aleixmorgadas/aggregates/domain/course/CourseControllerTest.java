@@ -21,7 +21,7 @@ class CourseControllerTest extends IntegrationTest {
     MockMvc mockMvc;
 
     @Test
-    void listStudents() throws Exception {
+    void listCourses() throws Exception {
         mockMvc.perform(get(CourseController.URI))
             .andExpect(status().isOk())
             .andExpect(jsonPath("$").isArray())
